@@ -1,4 +1,7 @@
-﻿#include <iostream>
+﻿
+//TODO: std::copy iterator and remove define? + in hpp
+#define _SCL_SECURE_NO_WARNINGS
+#include <iostream>
 #include <sstream>
 
 #include "MySet.hpp"
@@ -61,7 +64,7 @@ int main(int argc, char* argv[], char* env[])
 				break;
 			}
 		}
-		char op;
+		char op = '\0';
 		while (ss >> c)
 		{
 			if (c == ' ')
